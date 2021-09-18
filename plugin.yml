@@ -1,0 +1,24 @@
+name: ChestLogger
+author: francescopassante
+version: 1.0
+main: com.francescopassante.chestlogger.Main
+description: This plugin lets everyone log their chests, see who destroyed them (even if they make them explode with TNT) and manage their chests with a few inline commands
+api-version: 1.13
+commands:
+  chests:
+    usage: /chests
+    description: opens a GUI to see all the chests
+  chestlogger:
+    usage: /chestlogger reload | clear | clear <player>
+    description: lets you reload the config.yml file, clear your own list of chests or clear another player's list of chests
+
+
+permissions:
+  chestlogger.chests:
+    description: lets you perform /chests
+  chestlogger.reload:
+    description: lets the player reload the configuration file (config.yml) with the /chestlogger reload command
+  chestlogger.clear.self:
+    description: lets the player clear his list of logged chests with the /chestlogger clear command
+  chestlogger.clearl.other:
+    description: lets the player clear other players' lists of logged chests with the /chestlogger clear <player> command

@@ -1,0 +1,30 @@
+messages:
+# This prefix will show before every message sent by the ChestLogger plugin
+  prefix: "§f[Chest§aLogger§f] "
+  no-permission: "§cNo permission"
+# This is the message that will be sent when someone places a chest. Only if "send-message-on-chest-placed" is set to true
+  chest-placed-message: "§fChestLogger will now log your chest!"
+  cleared-own-chests: "§fSuccesfully cleared your logged chests list!"
+  cleared-other-chests: "§fSuccesfully cleared §a%target§f's chests! "
+  no-chests-to-clear: "§cThere are no chests to clear in the chest.yml file"
+  no-such-player: "§a %target §cis not online!"
+  config-reloaded: "The config has been §asuccesfully §freloaded!"
+
+chests:
+  #This is the title of the /chests GUI
+  inventory-title: "§a%owner§f's chests"
+# This is the display name of the chests inside the /chests GUI
+  display-name: "§aProtected §fchest"
+  #These are the settings for the data that shows under every chest when performing the /chests command (the placeholders are %x, %y, %z, %world for the four lines and %destroyer for the destroyed-by-line setting)
+  first-line: "§aX:§f %x"
+  second-line: "§aY:§f %y"
+  third-line: "§aZ:§f %z"
+  fourth-line: "§aWorld:§f %world"
+  destroyed-by-line: "§cDestroyed by:§f %destroyer"
+
+
+settings:
+#  If set to true, the player will receive the "chest-placed-message" when placing a chest
+  send-message-on-chest-placed: true
+
+
